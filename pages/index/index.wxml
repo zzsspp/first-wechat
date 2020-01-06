@@ -1,0 +1,104 @@
+<view class='container'>
+  <!-- 顶部搜索 -->
+  <view class='search'>
+    <view class='citys' bindtap="changeCity">
+      <text>{{city}}</text>
+      <van-icon name="arrow-down" />
+    </view>
+    <view class='input'>
+      <input type='text' placeholder='输入商户名，地点，找优惠' bindconfirm="searchDetail"></input>
+    </view>
+    <van-icon class='searchIcon' name="search" />
+  </view>
+
+  <!-- 大类别 -->
+  <view class='kinds'>
+    <view class='icon' wx:for="{{showIcon}}" wx:key="{{index}}">
+      <image src='../../images/picture/{{item.pic}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 小类别 -->
+  <view class='kinds'>
+    <view class='iconDetail' wx:for="{{showDetailIcon}}" wx:key="{{index}}">
+      <image src='../../images/picture/{{item.pic}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 广告 -->
+  <view class='ad'>
+    <swiper indicator-dots='true' autoplay='true' interval='3000'>
+      <swiper-item wx:for="{{adPic}}" wx:key="index">
+        <image src='../../images/picture/{{item}}'></image>
+      </swiper-item>
+    </swiper>
+    <view class='tag'>广告</view>
+  </view>
+
+  <!-- 超值拼团 -->
+  <view>
+    <view class='cheap'>
+      <text>超值<text class='light'>拼</text>团</text>
+      <view>
+        <text>限时<text class='light'>秒</text>杀</text>
+        <text class='timeLight'>{{countdown[0]}}</text>:
+        <text class='timeLight'>{{countdown[1]}}</text>:
+        <text class='timeLight'>{{countdown[2]}}</text>
+      </view>
+    </view>
+
+    <view class='cheap'>
+      <view class='product'>
+        <image src='../../images/picture/food1.jpg'></image>
+        <view class='cheapBorder'>
+          <text>超值单人休闲餐</text>
+          <view class='shopLine'>
+            <van-icon name="shop" class='shop' />
+            <text>老桂林米粉</text>
+          </view>
+          <view class='price'>
+            <text class='text1'>2人团</text>
+            <text class='text2'>￥11.76</text>
+            <text class='text3'>￥16.8</text>
+          </view>
+        </view>
+      </view>
+      <view class='product'>
+        <image src='../../images/picture/food1.jpg'></image>
+        <view class='cheapBorder'>
+          <text>超值单人休闲餐</text>
+          <view class='shopLine'>
+            <van-icon name="shop" class='shop' />
+            <text>老桂林米粉</text>
+          </view>
+          <view class='price'>
+            <text class='text2'>￥11.76</text>
+            <text class='text3'>￥16.8</text>
+          </view>
+        </view>
+      </view>
+      <view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 猜你喜欢 -->
+  <view class='guess'>
+    <text class='guess-like'>猜你喜欢</text>
+    <view class='guess-info' wx:for="{{showLikes}}" wx:key="{{index}}">
+      <image src='../../images/picture/{{item.pic}}'></image>
+      <view class='guess-content'>
+        <view>{{ item.name }}</view>
+        <view class='guess-item'>{{ item.detail }}</view>
+        <view class='guess-money'>
+          <text>￥{{ item.saleMoney }}</text>
+          <text>￥{{ item.money }}</text>
+          <text>已售{{ item.amount }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">{{footerInfo}}</view>
+</view>

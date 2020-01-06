@@ -1,0 +1,34 @@
+<view class='city'>
+  <view class='tab'>
+    <van-tabs active="{{ tabType }}" bind:change="changeTab">
+      <van-tab title="国内"></van-tab>
+      <van-tab title="国际/港澳台"></van-tab>
+    </van-tabs>
+  </view>
+  <view class='search'>
+    <van-search value="{{ value }}" placeholder="输入城市名或拼音查询" />
+  </view>
+
+  <van-cell title="{{city}}" icon="location-o" size="large" />
+
+  <view class='hotCity'>
+    <text wx:if="{{tabType===0}}">国内热门城市</text>
+    <text wx:if="{{tabType===1}}">国际/港澳台热门城市</text>
+    <view class='tag'>
+    <text wx:for="{{hotCity}}" wx:key="index" bindtap="chooseCity" data-name='{{item.name}}'>{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class='codeCity'>
+    <text>{{tag}}</text>
+    <van-cell-group>
+      <van-cell wx:for="{{typeCity}}" wx:key="index" title="{{item.name}}" bindtap="chooseCity" data-name='{{item.name}}'/>
+    </van-cell-group>
+  </view>
+
+  <view class="footerInfo">{{tipsInfo}}</view>
+
+  <view class='floatRight'>
+    <text wx:for="{{tagCity}}" wx:key="index" bindtap="chooseCityTag" data-item="{{item}}">{{item}}</text>
+  </view>
+</view>

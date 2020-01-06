@@ -1,0 +1,234 @@
+page{
+  background-color: #eee;
+}
+.top{
+  background: #ffffff;
+  padding: 20rpx;
+}
+.top-title{
+  display: flex;
+  align-items: center;
+}
+.top-title image{
+  width: 24rpx;
+  height: 30rpx;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+.top-title text{
+  font-weight: 600;
+}
+.scroll-header{
+  margin-top: 10rpx;
+  white-space: nowrap;
+  display: flex;
+}
+.top-scroll{
+  display: inline-block;
+  width: 230rpx;
+  height: 130rpx;
+  margin-left: 10rpx;
+  overflow: hidden;
+  border: 1px solid #eee;
+  box-shadow:inset -4rpx -4rpx 20rpx #eee;
+}
+.top-scroll text{
+  display: block;
+  padding: 10rpx 0 0 10px;
+}
+.top-scroll image{
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+  margin-left: 170rpx;
+  margin-top: 20rpx;
+}
+.quality-list{
+  margin-top: 20rpx;
+}
+.quality-title {
+  display: flex;
+  align-items: center;
+}
+.quality-title image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 4rpx 0 -10rpx;
+}
+.quality-title text{
+  font-weight: 600;
+}
+.quality{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.quality-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 48%;
+  height: 140rpx;
+  border: 1px solid #eee;
+  box-shadow:inset -4rpx -4rpx 20rpx #eee;
+}
+.quality-item image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.quality-item-title{
+  font-weight: 600;
+}
+.quality-item-detail{
+  color: #c0c0c0;
+  font-size: 12px;
+  margin-top: 10rpx;
+}
+.detail{
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.detail-title{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.fixed-top{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #ffffff;
+}
+.detail-title text{
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+.active{
+  color: #f59800;
+  border-bottom: 2px solid #f59800;
+  padding-bottom: 10rpx;
+}
+.detail-tag{
+  margin: 20rpx;
+}
+.defaultTag{
+  display: inline-block;
+  margin-right: 20rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 40rpx;
+  background: #eee;
+  color: #333;
+  font-size: 12px;
+}
+.activeTag{
+  display: inline-block;
+  margin-right: 20rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 40rpx;
+  background: rgba(255,140,0,0.1);
+  color: #f59800;
+  font-size: 12px;
+}
+.detail-item{
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 20rpx;
+}
+.detail-item image {
+  width:260rpx;
+  height:210rpx;
+  margin-right: 20rpx;
+  border-radius: 4rpx;
+}
+.detail-item-content{
+  width: 85%;
+}
+.detail-start{
+  display: inline-block;
+  background: #c0c0c0;
+  border-radius: 10rpx;
+  width: 32rpx;
+  height: 32rpx;
+  margin: 8rpx 10rpx 0 0;
+}
+.half{
+  background: #f59800;
+}
+.all {
+  background: #ff6600;
+}
+.detail-start image{
+  width: 32rpx;
+  height: 34rpx;
+}
+.detail-price{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0 10rpx 0;
+}
+.detail-price text{
+  display:inline-block;
+  height:32rpx;
+  font-size: 14px;
+}
+.detail-address{
+  color: #c0c0c0;
+  font-size: 14px;
+}
+.detail-tips{
+  display: inline-block;
+  padding: 6rpx 14rpx;
+  border-radius: 4rpx;
+  background: rgba(255,140,0,0.1);
+  color: #f59800;
+  margin-top: 20rpx;
+  font-size: 12px;
+}
+.detail-group{
+  border-top: 1px solid #eee;
+  margin-top: 14rpx;
+  padding-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.detail-group-tip{
+  display: inline-block;
+  background: #ff6600;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 6rpx 2rpx 6rpx;
+  border-radius: 4rpx;
+  margin-right: 8rpx;
+}
+.detail-group-info{
+  width: 430rpx;
+  display: inline-block;
+  font-size: 14px;
+  color: #c0c0c0;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.detail-group-coupon{
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.detail-coupon-tip{
+  display: inline-block;
+  background: #f59800;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 6rpx 2rpx 6rpx;
+  border-radius: 4rpx;
+  margin-right: 8rpx;
+}
+.noMessage{
+  height: 520rpx;
+  line-height: 520rpx;
+  text-align: center;
+  color: #c0c0c0;
+}

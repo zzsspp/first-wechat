@@ -1,0 +1,65 @@
+page{
+  background: #eee;
+}
+.search .van-search {
+  background: #eee !important
+}
+.search .van-search__content{
+  background-color:#fff;
+}
+.search .van-search__content{
+  border-radius: 30rpx;
+}
+.city .van-cell--large .van-cell__title{
+  font-size:14px;
+}
+.city .van-cell__value{
+  font-size:12px;
+}
+.tab .van-tabs__line{
+  background-color: #f59800;
+}
+.hotCity{
+  position: relative;
+  top: 20rpx;
+  padding: 20rpx;
+  font-size: 14px;
+  color: #7d7e80;
+}
+.tag{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  padding: 20rpx 0;
+}
+.tag text{
+  display: inline-block;
+  background: #fff;
+  padding: 14rpx 80rpx;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.codeCity text{
+  display: inline-block;
+  padding: 0 0 10rpx 20rpx;
+  color: #7d7e80;
+}
+.floatRight{
+  font-size: 12px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  right: 6rpx;
+  top: 22%;
+  color: #42426f;
+}
+.footerInfo {
+  font-size: 14px;
+  color: #7d7e80;
+  text-align: center;
+  margin: 14rpx 0;
+}

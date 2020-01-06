@@ -1,0 +1,20 @@
+<view class="container">
+<view>
+</view>
+  <view class='cheap'>
+    <view class='item' wx:for="{{tableList}}" wx:key="{{index}}">
+      <image class='item-showPic' src='{{item.coverPic}}'></image>
+      <text class='item-title'>{{ item.title }}</text>
+      <view class='item-shop'>
+        <image src='../../images/coupon/shop.png'></image>
+        <text>{{ item.shop }}</text>
+      </view>
+      <view class='item-money'>
+        <text>￥{{ item.money }}</text>
+        <text>￥{{ item.originMoney }}</text>
+        <text>{{ item.discount }}折</text>
+      </view>
+    </view>
+  </view>
+  <view class="footer">{{footerInfo}}</view>
+</view>

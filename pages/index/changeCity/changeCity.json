@@ -1,0 +1,16 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "选择城市",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 0,
+  "usingComponents": {
+    "van-search": "../../../miniprogram_npm/vant-weapp/search/index",
+    "van-cell": "../../../miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "../../../miniprogram_npm/vant-weapp/cell-group/index",
+    "van-tab": "../../../miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "../../../miniprogram_npm/vant-weapp/tabs/index"
+  }
+  
+}

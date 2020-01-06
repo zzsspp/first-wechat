@@ -1,0 +1,12 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "首页",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 0,
+  "usingComponents": {
+    "van-search": "../../miniprogram_npm/vant-weapp/search/index",
+    "van-icon": "../../miniprogram_npm/vant-weapp/icon/index"
+  }
+}

@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="setup">
+    <image src="../../../images/mine/card.png"></image>
+    <text>请上传本人证件照</text>
+  </view>
+
+  <view class="upload">
+    <view class="upload_show">
+      <image src="{{ front }}" bindtap="openPic" data-type="1"></image>
+      <view>身份证正面</view>
+    </view>
+    <view class="upload_show">
+      <image src="{{ reverse }}" bindtap="openPic" data-type="2"></image>
+      <view>身份证反面</view>
+    </view>
+    <view class="upload_show">
+      <image src="{{ hand }}" bindtap="openPic" data-type="3"></image>
+      <view>手持身份证照</view>
+    </view>
+  </view>
+</view>

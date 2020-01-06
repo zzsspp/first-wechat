@@ -1,0 +1,27 @@
+.setup{
+display: flex;
+align-items: center;
+}
+.setup image{
+  width:64rpx;
+  height:60rpx;
+}
+.setup text {
+  font-weight: 600;
+  margin-left: 20rpx;
+  color: #333;
+}
+.upload{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16rpx;
+}
+.upload_show{
+  width: 50%;
+  text-align: center;
+  margin: 20rpx 0;
+}
+.upload_show image{
+  width:300rpx;
+  height:170rpx;
+}

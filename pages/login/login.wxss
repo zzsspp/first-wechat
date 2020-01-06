@@ -1,0 +1,22 @@
+.bgImg{
+  position: relative;
+  top: 300rpx;
+  left: 5%;
+  width: 90%;
+  height: 200rpx;
+}
+
+.loginBtn{
+  position:fixed;
+  bottom:200rpx;
+  left:5%;
+  width:90%;
+  color:#ffffff;
+  text-align:center;
+  background:#f59800;
+  border-radius:6rpx;
+}
+/* 小程序中button组件的边框样式不是在button上的，是在button::after伪元素上的 */
+.loginBtn::after {
+  border: 0; 
+}

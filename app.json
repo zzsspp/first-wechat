@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/index/changeCity/changeCity",
+    "pages/coupon/coupon",
+    "pages/ranking/ranking",
+    "pages/mine/mine",
+    "pages/mine/cardUpload/cardUpload"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#ff6339",
+    "borderStyle": "#000000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabs/index.png",
+        "selectedIconPath": "images/tabs/index-active.png"
+      },
+      {
+        "text": "找优惠",
+        "pagePath": "pages/coupon/coupon",
+        "iconPath": "images/tabs/coupon.png",
+        "selectedIconPath": "images/tabs/coupon-active.png"
+      },
+      {
+        "text": "找好店",
+        "pagePath": "pages/ranking/ranking",
+        "iconPath": "images/tabs/ranking.png",
+        "selectedIconPath": "images/tabs/ranking-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/tabs/mine.png",
+        "selectedIconPath": "images/tabs/mine-active.png"
+      }
+    ]
+  }
+}

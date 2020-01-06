@@ -1,0 +1,4 @@
+<view class="container">
+  <image src='../../images/picture/login-bg.jpg' class='bgImg' ></image>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='loginBtn'>微信授权</button>
+</view>

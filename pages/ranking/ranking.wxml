@@ -1,0 +1,77 @@
+<view class='ranking'>
+  <view class='top'>
+    <view class='top-title'>
+      <image src='../../images/ranking/rank.png'></image>
+      <text>美食排行</text>
+    </view>
+
+    <scroll-view scroll-x class="scroll-header">
+      <view class='top-scroll' wx:for="{{foodRank}}" wx:key="{{index}}">
+        <text>{{item.name}}</text>
+        <image src='../../images/ranking/icon.png'></image>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='top quality-list'>
+    <view class='quality-title'>
+      <image src='../../images/ranking/quality.png'></image>
+      <text>精品排行</text>
+    </view>
+
+    <view class='quality'>
+      <view class='quality-item' wx:for="{{qualityList}}" wx:key="{{index}}">
+        <view>
+          <view class='quality-item-title'>{{item.title}}</view>
+          <view class='quality-item-detail'>{{item.detail}}</view>
+        </view>
+        <image src="../../images/ranking/{{item.image}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='detail'>
+    <!--导航标题  -->
+    <view class='detail-title {{scrollTop>240 ? "fixed-top" : ""}}'>
+      <text class='{{detailTitle==="1" ? "active" : ""}}' bindtap="chooseTitle" data-title="1">附近上榜</text>
+      <text class='{{detailTitle==="2" ? "active" : ""}}' bindtap="chooseTitle" data-title="2">全城上榜</text>
+    </view>
+    <view wx:if='{{detailTitle==="1"}}'>
+      <!-- tag选择 -->
+      <view class='detail-tag'>
+        <text class='{{detailTag==="1" ? "activeTag" : "defaultTag"}}' bindtap="chooseTag" data-tag="1">美食</text>
+        <text class='{{detailTag==="2" ? "activeTag" : "defaultTag"}}' bindtap="chooseTag" data-tag="2">休闲娱乐</text>
+      </view>
+      <!-- 内容展示 -->
+      <view class='detail-item' wx:for="{{tableList}}" wx:key="{{index}}">
+        <image src='../../images/ranking/{{item.image}}'></image>
+        <view class='detail-item-content'>
+          <view>{{ item.title }}</view>
+          <view class='detail-price'>
+            <view wx:for="{{item.star}}" wx:key="{{index}}">
+              <view class='detail-start {{item===2 ? "all" : item===1 ? "half" : "" }}'>
+                <image src='../../images/ranking/star.png'></image>
+              </view>
+            </view>
+            <text>￥{{item.money}}/人</text>
+          </view>
+          <view class='detail-address'>{{item.address}}</view>
+          <view class='detail-tips'>{{item.rank}}</view>
+          <view class='detail-group'>
+            <text class='detail-group-tip'>团</text>
+            <text class='detail-group-info'>{{item.group}}</text>
+          </view>
+          <view class='detail-group-coupon'>
+            <text class='detail-coupon-tip'>卷</text>
+            <text class='detail-group-info'>{{item.coupon}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if='{{detailTitle==="2"}}' class='noMessage'>
+    暂无信息
+    </view>
+
+  </view>
+</view>

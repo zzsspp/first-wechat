@@ -1,0 +1,87 @@
+.userinfo{
+  display: flex;
+  align-items: center;
+}
+.userinfo-avatar{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.userinfo-base{
+  margin-left: 20rpx;
+  width:61%;
+}
+.userinfo-name{
+  font-weight: 600;
+  font-size: 20px;
+}
+.userinfo-city{
+  font-size: 14px;
+  margin: 10rpx 0;
+}
+.userinfo-detail{
+  font-size: 12px;
+  color: #c0c0c0;
+}
+.userinfo-arrow{
+  width:22rpx;
+  height:22rpx;
+  margin:6rpx 0 0 6rpx;
+}
+.card{
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow:0 0 10px #e0e0e0;
+  height: 140rpx;
+  margin-top: 60rpx;
+  border-radius: 10rpx;
+}
+.card-info{
+  width: 88%;
+  margin-left: 20rpx;
+}
+.card-img{
+  width:50rpx;
+  height:50rpx;
+  position:relative;
+  top:16rpx;
+}
+.card-card{
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+}
+.card-detail{
+  font-size: 12px;
+  color: #c0c0c0;
+}
+.card-two{
+  width:30rpx;
+  height:30rpx;
+  position:relative;
+  top:10rpx;
+}
+.operate{
+  margin-top: 80rpx;
+}
+.edition{
+  color: #c0c0c0;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+}
+.originCard{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 100rpx;
+}
+.originText{
+  color: #c0c0c0;
+  font-size: 12px;
+  position:relative;
+  bottom:60rpx;
+  left:26rpx;
+}

@@ -1,0 +1,190 @@
+.search{
+  display: flex;
+  align-items: center;
+  margin: 40rpx;
+}
+.citys text{
+  font-size: 14px;
+  font-weight: 600;
+}
+.citys .van-icon{
+  position: relative;
+  top:6rpx;
+  left: 4rpx;
+}
+.van-search__content {
+  width: 430rpx;
+  border-radius:30rpx;
+}
+.input{
+  width: 74%;
+}
+.input input{
+  background:#efefef;
+  padding:8rpx 8rpx 8rpx 60rpx;
+  font-size:14px;
+  position: relative;
+  left: 30rpx;
+  border-radius: 30rpx;
+}
+.searchIcon{
+  position:relative;
+  top:4rpx;
+  right:67%;
+}
+.kinds{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  position: relative;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 20%;
+  margin: 30rpx 0;
+  font-size: 13px
+}
+.icon image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.iconDetail{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 20%;
+  margin: 20rpx 0;
+  font-size: 10px
+}
+.iconDetail image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.ad image{
+  width: 100%;
+  height: 95%;
+}
+.tag{
+  float:right;
+  font-size:14px;
+  position:relative;
+  top:-56rpx;
+  right:2rpx;
+  background:rgba(100,100,100,0.4);
+  padding:2rpx 10rpx;
+  color: #000;
+}
+.cheap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10rpx;
+}
+.cheap text{
+  display: inline-flex;
+  align-items: center;
+}
+.light{
+  color: #f59800
+}
+.timeLight{
+  display: inline-block;
+  background: #f59800;
+  margin: 0 6rpx;
+  padding: 0 6rpx;
+  border-radius: 4rpx;
+}
+.product{
+  width: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #c0c0c0;
+  margin: 10rpx;
+}
+.cheapBorder{
+  padding:  0 10rpx 20rpx 10rpx;
+}
+.product image{
+  width:100%;
+  height:170rpx;
+}
+.product .shop{
+  /* color: #333; */
+  position: relative;
+  top: 4rpx;
+}
+.product .shopLine{
+  color: #c0c0c0;
+}
+.price .text1{
+  color: #f59800;
+  position: relative;
+  border: 1px solid #f59800;
+  font-size: 12px;
+  padding: 0 4rpx;
+}
+.price .text2{
+  color: #f59800;
+  font-size: 16px;
+}
+.price .text3{
+  color: #c0c0c0;
+  font-size: 12px;
+  text-decoration:line-through;
+}
+.guess{
+  position: relative;
+  top: 20rpx;
+}
+.guess-like{
+  font-weight: 600;
+  font-size: 14px;
+}
+.guess-info{
+  display: flex;
+  border-bottom: 1px #c0c0c0 solid;
+  margin-bottom: 20rpx;
+  padding: 20rpx 0;
+}
+.guess-info image{
+ width: 280rpx;
+ height: 190rpx;
+ border-radius: 10rpx;
+}
+.guess-content{
+  margin-left: 20rpx;
+  width: 100%;
+}
+.guess-item{
+  font-size: 13px;
+  color: #c0c0c0;
+  margin-top: 10px;
+}
+.guess-money {
+  position: relative;
+  top: 60rpx;
+}
+.guess-money text:nth-child(1){
+  color: #f59800;
+  font-weight: 600;
+}
+.guess-money text:nth-child(2){
+  font-size: 13px;
+  color: #c0c0c0;
+  margin-left: 6rpx;
+}
+.guess-money text:nth-child(3){
+  font-size: 13px;
+  color: #c0c0c0;
+  float: right;
+}
+.footer{
+  font-size: 13px;
+  color: #c0c0c0;
+  text-align: center;
+  margin-top: 30rpx;
+}
